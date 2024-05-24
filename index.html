@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="logo">
+                <img src="trendy-times-low-resolution-logo-color-on-transparent-background (1).png" alt="LOGO">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-item" id="ipl" onclick="onNavClick('ipl')">IPL</li>
+                    <li class="nav-item" id="finance" onclick="onNavClick('finance')">FINANCE</li>
+                    <li class="nav-item" id="politics" onclick="onNavClick('politics')" >POLITICS</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+ </main>
+ <footer>
+    <div class="footer container">
+        <h3>
+            ©TrendyTimes 2023
+        </h3>
+        <h3>Designed And Developed By Nisharg Soni</h3>
+    </div>
+
+ </footer>
+
+    <template id="templete">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" src="https://via.placeholder.com/400x200" alt="news-image">
+            </div>
+            <div class="card-content">
+                <h1 class="news-title" id="news-title">This is title</h1>
+                <h5 class="news-source" id="news-source">End Gadget 26/08/2023</h5>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut veritatis eos sequi obcaecati
+                    blanditiis repellendus iusto voluptatum earum animi dolorum!
+                </p>
+            </div>
+
+        </div>
+    </template>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
